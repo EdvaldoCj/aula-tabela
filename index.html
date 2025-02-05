@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+       th, td {
+        border: 1px solid black;
+       }
+
+       .qtd {
+        text-align: center;
+       }
+
+       tfoot {
+        background-color: cyan;
+       }
+
+       th {
+        background-color: yellow;
+       }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <!-- < tag table > serve para englobar toda a estrutura da tabela -->
+    <table>
+        <!-- < tag thead > serve para fazer ou organizar um cabeçalho -->
+        <thead>
+            <!-- < tag tr > representa uma linha da tabela -->
+            <tr>
+                <!-- < tag th > é responsavel por cada coluna do cabeçalho -->
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black friday</th>
+            </tr>
+        </thead>
+        <!-- < tag tbody > representa o corpo dos dados -->
+        <tbody>
+            
+            <tr>
+                <td>Produto 1</td>
+                <td class="qtd">2</td>
+                <td>5$</td>
+                <td rowspan="2">sim</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td class="qtd">5</td>
+                <td>10$</td>                
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td class="qtd">3</td>
+                <td>15$</td>
+                <td>não</td>
+            </tr>
+            <tr>
+                <td>Produto 4</td>
+                <td class="qtd">7</td>
+                <td>20$</td>
+                <td>sim</td>
+            </tr>
+        </tbody>
+            <!-- < tag tfoot > serve para agrupar um conteudo no roda pé -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>50$</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
